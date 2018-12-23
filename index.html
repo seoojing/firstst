@@ -265,7 +265,9 @@ p { width: 80ch;
 	 	<audio id="walk">
 		<source src="walk.mp3" type="audio/mpeg"autoplay="true" preload="auto">
 	</audio>
-
+ 	<audio id="talk">
+		<source src="talk.mp3" type="audio/mpeg" preload="auto">
+	</audio>
 
 	<audio id="but">
 		<source src="but.mp3" type="audio/mpeg">
@@ -298,7 +300,8 @@ p { width: 80ch;
 <script type="text/javascript">
 
 	sigar.onclick = function(){
-		walk.pause();		
+		walk.pause();
+		talk.play();
 		sigar.style.display = "none"
 		sigar2.style.display = "inline"
 		sigar3.style.display = "inline"
